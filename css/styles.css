@@ -253,27 +253,117 @@ http://127.0.0.1:3002/index.html
     fill: #f4f4fd;
 }
 
+/* !===HERO SECTION=== */
+.hero-section {
+    width: 320px;
+    height: 432px;
+    background-color: #2e2f42;
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 72px 0;
+}
+
+.hero-title {
+    color: var(--WHITE, #FFF);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    max-width: 170px;
+}
+
+.hero-title>span {
+    text-transform: none;
+}
+
+.hero-btn {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 16px 32px;
+    background-color: #4d5ae5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404bbf;
+}
+
+/* !===POWER SECTION=== */
+/* ===power section */
+.power-section {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #afffffa7;
+}
+
+.power-container {
+    padding: 96px 16px;
+}
+
+.power-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.power-item-title {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+
+.power-item-text {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
 
 /* !===ADAPTIVE=== */
 @media screen and (min-width: 768px) {
-    /* .container {
-        width: 768px;
-    } */
-
-    .header-section {
+.header-section {
     max-width: 768px;
 }
 
-    .header-menu-btn {
+.header-menu-btn {
     display: none;
 }
 
 .header-logo-link {
-    padding: 26px 0;
     margin-right: 120px;
 }
-    .header-logo-link {
-        color: violet;
+
+.header-logo-link {
+    color: violet;
     }
     
 .header-menu-backdrop {
@@ -296,6 +386,7 @@ http://127.0.0.1:3002/index.html
     /* display: flex; */
     margin-bottom: 0;
 }
+
 .menu-page-list {
     display: flex;
     gap: 40px;
@@ -323,13 +414,7 @@ http://127.0.0.1:3002/index.html
     flex-direction: column-reverse;
     gap: 12px;
     padding-top: 16px;
-
-    /* display: block; */
-    /* margin-top: 0;
-    margin-bottom: 0; */
     margin: 0;
-    /* margin-left: auto;
-    padding: 16px 0; */
 }
 
 .header-menu>.menu-contacts-list {
@@ -350,7 +435,121 @@ http://127.0.0.1:3002/index.html
 .menu-social-list {
     display: none;
 }
+
+/* ===hero section */
+.hero-section {
+    width: 768px;
+    height: 436px;
+}
+
+.hero-container {
+    padding: 112px 0;
+}
+
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+}
+
+/* ===power section */
+.power-section {
+    width: 768px;
+}
+
+.power-container {
+    padding: 96px 16px;
+}
+
+.power-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.power-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.power-item:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.power-item-title {
+    text-align: left;
+}
+
+}
+
+/* !=== */
+@media screen and (min-width: 1158px) {
+.header-section {
+    min-width: 1158px;
+}
+
+.header-logo-link {
+    margin-right: 76px;
+}
+
+.header-logo-link {
+    color: rgb(144, 228, 232);
+    }
+
+.header-menu {
+    justify-content: space-between;
+}
+
+.menu-contacts-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 40px;
+    padding-top: 24px;
     
+}
+
+/* ===hero setion=== */
+.hero-section {
+    width: 1158px;
+    height: 600px;
+}
+
+.hero-container {
+    padding: 188px 0;
+}
+
+.hero-title {
+    margin-bottom: 48px;
+}
+
+/* ===power section */
+.power-section {
+    width: 1158px;
+}
+
+.power-container {
+    padding: 120px 16px;
+}
+
+.power-list {
+    flex-wrap: nowrap;
+}
+
+.power-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.power-item-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.power-item-text {
+    font-weight: 400;
+}
 }
 
 
