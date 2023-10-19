@@ -89,7 +89,6 @@ img {
 
 .header-icon {
     fill: rgba(47, 47, 55, 1);
-http://127.0.0.1:3002/index.html
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,7 +116,7 @@ http://127.0.0.1:3002/index.html
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-backdrop.is-open {
+.header-menu-backdrop .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
